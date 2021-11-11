@@ -1,0 +1,39 @@
+.parent {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 2fr 1fr;
+      grid-template-columns: 2fr 1fr;
+  grid-gap: 100px;
+  padding: 30px 50px;
+}
+
+.parent a {
+  color: #ff8000;
+  text-decoration: none;
+}
+
+.parent .child:last-child {
+  color: #ff8000;
+}
+
+.parent .child:first-child p:last-child a {
+  color: #000000;
+  font-weight: bold;
+}
+
+@media (max-width: 576px) {
+  .parent {
+    display: block;
+  }
+  .parent .child:first-child p:last-child a {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .parent {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+/*# sourceMappingURL=scss-task-2.css.map */

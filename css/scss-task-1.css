@@ -1,0 +1,28 @@
+h1 {
+  font-family: sans-serif;
+  margin: 100px auto;
+  text-align: center;
+  color: black;
+  font-size: 40px;
+  max-width: 900px;
+  position: relative;
+}
+
+h1:before, h1:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 5px;
+  background-color: #A9A9A9;
+  position: absolute;
+  top: 50%;
+}
+
+h1:before {
+  right: 630px;
+}
+
+h1:after {
+  left: 630px;
+}
+/*# sourceMappingURL=scss-task-1.css.map */
