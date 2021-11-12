@@ -15,7 +15,7 @@ function minhtml() {
     .pipe(dest('dist'));
 }
 function cssTask() {
-    return src('src/*.css')
+    return src('css/*.css')
       .pipe(sourcemaps.init())
       .pipe(concat('style.css'))
       .pipe(postcss([autoprefixer(), cssnano()])) 
